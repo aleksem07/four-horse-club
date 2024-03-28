@@ -1,2 +1,14 @@
 .header {
 }
+
+.nav__logo {
+  width: 76px;
+  height: 27px;
+  background-image: url("/src/assets/horse.png");
+  background-repeat: repeat;
+}
+
+.nav__title {
+  text-transform: uppercase;
+  font-family: $font-family;
+}
