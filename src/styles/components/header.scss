@@ -1,4 +1,14 @@
 .header {
+  padding-top: 20px;
+  min-height: 812px;
+  background-image: url("/src/assets/backgrounds/bcg-header.png");
+  background-repeat: no-repeat;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 5.5px;
 }
 
 .nav__logo {
@@ -11,4 +21,8 @@
 .nav__title {
   text-transform: uppercase;
   font-family: $font-family;
+  font-weight: 700;
+  font-size: $fz-14px;
+  line-height: 108%;
+  color: $color-text-logo;
 }
