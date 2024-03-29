@@ -4,7 +4,6 @@ body {
   margin-inline: auto;
   max-width: $width-desktop;
   width: 100%;
-  min-width: $width-mobile;
   font-family: $font-family;
   font-weight: 400;
   font-size: 1rem;
@@ -30,4 +29,18 @@ h6 {
   font-weight: normal;
   line-height: normal;
   margin: 0;
+}
+
+button {
+  margin: 0 auto;
+  border-radius: 66px;
+  padding: 13px 20px;
+  width: 100%;
+  display: block;
+  font-weight: 500;
+  font-size: $fz-16px;
+  line-height: 130%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }

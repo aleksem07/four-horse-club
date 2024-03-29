@@ -1,16 +1,18 @@
 .header {
-  min-width: $width-mobile;
+  margin-bottom: 20px;
   padding-top: 20px;
-  min-height: 812px;
+  position: relative;
+  min-height: 792px;
   background-image: url("/src/assets/backgrounds/bcg-header.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .nav {
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
-  gap: 5.5px;
+  gap: 10.5px;
 }
 
 .nav__logo {
@@ -27,4 +29,54 @@
   font-size: $fz-14px;
   line-height: 108%;
   color: $color-text-logo;
+}
+
+.header__title {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-second-family;
+  font-size: $fz-36px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #313131;
+
+  & span {
+    text-align: center;
+
+    &:last-child {
+      text-align: end;
+    }
+  }
+}
+
+.header__desc {
+  margin-bottom: 32px;
+  font-size: $fz-18px;
+  line-height: 130%;
+}
+
+.header__button {
+  &--black {
+    margin-bottom: 14px;
+    background-color: $color-bg-button--dark;
+    color: $color-text-white;
+  }
+
+  &--white {
+    background-color: $color-bg-button--light-90;
+    color: $color-bg-button--dark;
+  }
+}
+
+.header__ticker {
+  padding-block: 10px;
+  position: absolute;
+  bottom: 0;
+  color: $color-text-white;
+  font-family: $font-second-family;
+  font-size: $fz-16px;
+  line-height: 110%;
+  text-transform: uppercase;
+  background-color: $color-bg-ticker;
 }
