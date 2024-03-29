@@ -1,7 +1,5 @@
-@import "a_normalize.scss";
-@import "b_global.scss";
-@import "default_variables.scss";
-@import "fonts.scss";
-@import "footer.scss";
-@import "header.scss";
-@import "promo.scss";
+@import "1_normalize.scss";
+@import "2_global.scss";
+@import "3_default_variables.scss";
+@import "4_fonts.scss";
+@import "blocks/+.scss";

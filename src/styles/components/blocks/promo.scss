@@ -60,6 +60,7 @@
   }
 
   & .price__bg-players--fill-gray {
+    position: relative;
     mix-blend-mode: color-burn;
     height: 403px;
     width: 375px;
