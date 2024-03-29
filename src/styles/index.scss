@@ -3,7 +3,14 @@
 body {
   margin-inline: auto;
   max-width: $width-desktop;
+  width: 100%;
   min-width: $width-mobile;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 1rem;
+  display: grid;
+  justify-content: center;
+  color: $color-text-main;
 }
 
 ul,

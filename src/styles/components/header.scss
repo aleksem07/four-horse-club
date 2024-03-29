@@ -1,8 +1,10 @@
 .header {
+  min-width: $width-mobile;
   padding-top: 20px;
   min-height: 812px;
   background-image: url("/src/assets/backgrounds/bcg-header.png");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .nav {
