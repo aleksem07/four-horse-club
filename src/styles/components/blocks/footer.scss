@@ -3,5 +3,8 @@
 }
 
 .footer__desc {
-  margin-bottom: 60px;
+  margin-block: 40px 60px;
+  font-size: $fz-16px;
+  line-height: 120%;
+  opacity: 0.6;
 }
