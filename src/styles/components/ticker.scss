@@ -1,0 +1,15 @@
+.ticker {
+  padding-block: 10px;
+  color: $color-text-white;
+  font-family: $font-second-family;
+  font-size: $fz-16px;
+  line-height: 110%;
+  text-transform: uppercase;
+  background-color: $color-bg-ticker;
+  z-index: 10;
+
+  @media screen and (min-width: $width-mobile + 1) {
+    padding-block: 18px;
+    font-size: $fz-24px;
+  }
+}
