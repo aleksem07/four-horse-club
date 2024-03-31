@@ -6,15 +6,25 @@ section.stages
 
         ul.stages__slider.slider.slider__list
             li.slider__item
-                ul.slide
-                    li.slide__item Строительство железнодорожной магистрали Москва-Васюки
-                    li.slide__item Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
-                ul.slide
-                    li.slide__item Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
-                ul.slide
-                    li.slide__item Строительство дворца для турнира
-                    li.slide__item Размещение гаражей для гостевого автотранспорта 
-                ul.slide
-                    li.slide__item Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
-                ul.slide
-                    li.slide__item Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
+                ol.stages-slide.active
+                    li.stages-slide__item Строительство железнодорожной магистрали Москва-Васюки
+                    li.stages-slide__item Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+                ol.stages-slide
+                    li.stages-slide__item Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
+                ol.stages-slide
+                    li.stages-slide__item Строительство дворца для турнира
+                    li.stages-slide__item Размещение гаражей для гостевого автотранспорта 
+                ol.stages-slide
+                    li.stages-slide__item Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
+                ol.stages-slide
+                    li.stages-slide__item Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
+
+        .stages-slider__switch.stages-switch
+            button.stages-switch__left(disabled) 
+            ul.stages-switch__list
+                li.stages-switch__item.stages-switch__item--active
+                li.stages-switch__item 
+                li.stages-switch__item 
+                li.stages-switch__item 
+                li.stages-switch__item 
+            button.stages-switch__right

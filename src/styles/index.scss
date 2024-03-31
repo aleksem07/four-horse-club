@@ -40,6 +40,7 @@ dd {
 }
 
 button {
+  position: relative;
   margin: 0 auto;
   border-radius: 66px;
   padding: 13px 20px;
@@ -51,4 +52,52 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  &[class*="-switch"] {
+    padding: 0;
+    margin: 0;
+    flex: 0;
+
+    &::before {
+      content: url("");
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: $color-button-default;
+      transition: all 0.3s ease-in;
+    }
+
+    &:hover {
+      &::before {
+        background-color: $color-button-hover;
+      }
+    }
+
+    &:disabled {
+      &::before {
+        background-color: $color-button-disable;
+      }
+    }
+  }
+
+  &[class*="__left"] {
+    &::after {
+      content: url("/src/assets/icons/arrow-left.svg");
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &[class*="__right"] {
+    &::after {
+      content: url("/src/assets/icons/arrow-right.svg");
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }

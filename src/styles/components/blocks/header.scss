@@ -61,11 +61,21 @@
     margin-bottom: 14px;
     background-color: $color-bg-button--dark;
     color: $color-text-white;
+
+    &:hover {
+      background-color: $color-button-hover;
+      color: $color-text-main;
+    }
   }
 
   &--white {
     background-color: $color-bg-button--light-90;
     color: $color-bg-button--dark;
+
+    &:hover {
+      background-color: $color-bg-button--dark;
+      color: $color-text-white;
+    }
   }
 }
 

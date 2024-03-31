@@ -1,0 +1,132 @@
+.stages {
+  margin-bottom: 120px;
+
+  &__container {
+    position: relative;
+  }
+}
+
+.stages__title {
+  margin-bottom: 13px;
+  font-family: $font-second-family;
+  font-size: $fz-36px;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.stages__desc {
+  margin-bottom: 149px;
+  font-size: $fz-18px;
+  line-height: 120%;
+  color: $color-text-add;
+}
+
+.stages__img {
+  margin-bottom: 5px;
+  position: absolute;
+  top: 196px;
+  z-index: 1;
+}
+
+.slider__list {
+  counter-reset: stages-count 0;
+  margin-bottom: 3px;
+}
+
+.stages-slide {
+  padding-top: 62px;
+  margin-bottom: 28px;
+  position: relative;
+  height: 300px;
+  box-sizing: border-box;
+  background: url("/src/assets/backgrounds/bg-paper.png");
+
+  &::after {
+    content: "";
+    background-image: url("/src/assets/backgrounds/bg-gray.png");
+    position: absolute;
+    mix-blend-mode: color-burn;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  & &__item:first-child {
+    margin-bottom: 29px;
+  }
+}
+
+.slider__item {
+  display: grid;
+  place-items: center;
+}
+
+.stages-slide {
+  visibility: hidden;
+  grid-area: 1 / 1;
+}
+
+.stages-slide__item {
+  counter-increment: stages-count;
+  padding-inline: 72px 24px;
+  position: relative;
+  font-weight: 500;
+  font-size: $fz-18px;
+  line-height: 120%;
+
+  &::before {
+    content: counter(stages-count);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: $color-bg--light;
+
+    font-weight: 600;
+    font-size: $fz-20px;
+    line-height: 120%;
+  }
+}
+
+.active {
+  visibility: visible;
+}
+
+.stages-slider__switch.stages-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.stages-switch__left {
+  padding: 0;
+  margin: 0;
+  flex: 0;
+}
+
+.stages-switch {
+  gap: 16px;
+  transform: translateX(-7px);
+}
+
+.stages-switch__list {
+  gap: 6px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stages-switch__item {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $color-button-bullet;
+
+  &--active {
+    background-color: $color-button-default;
+  }
+}
