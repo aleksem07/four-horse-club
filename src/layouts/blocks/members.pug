@@ -4,12 +4,13 @@ section.members
         
         ul.members__slider.slider-member.slider-member__list
             li.slider-member__item
-                img.slide-member__img(src="/src/assets/person-placeholder.png", alt="person placeholder")
+                .slider-member__img-box
+                    img.slide-member__img(src="/src/assets/person-placeholder.png", alt="person placeholder")
                 h3.slide-member__name Хозе-Рауль Капабланка
                 h4.slide-member__rank Чемпион мира по шахматам
                 button.slide-member__more Подробнее
 
         .slide-member__switch.members-switch
             button.members-switch__left
-            p.members-switch__current 1/6
+            p.members-switch__current 1 <span>/ 6</span>
             button.members-switch__right
