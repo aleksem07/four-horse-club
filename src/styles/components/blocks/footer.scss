@@ -1,9 +1,16 @@
 .footer {
   background-color: $color-bg;
+  position: relative;
+}
+
+.footer__ticker {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .footer__desc {
-  margin-block: 40px 60px;
+  margin-block: 80px 60px;
   font-size: $fz-16px;
   line-height: 120%;
   opacity: 0.6;

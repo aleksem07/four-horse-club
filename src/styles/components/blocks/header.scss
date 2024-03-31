@@ -80,13 +80,6 @@
 }
 
 .header__ticker {
-  padding-block: 10px;
   position: absolute;
   bottom: 0;
-  color: $color-text-white;
-  font-family: $font-second-family;
-  font-size: $fz-16px;
-  line-height: 110%;
-  text-transform: uppercase;
-  background-color: $color-bg-ticker;
 }
