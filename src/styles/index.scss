@@ -52,6 +52,7 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: 10;
 
   &[class*="-switch"] {
     padding: 0;
